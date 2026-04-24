@@ -1,5 +1,6 @@
 package com.useless.health_api.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,6 +17,9 @@ public class ExamModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+
+	@Column(name = "firebase_uuid", nullable = false)
+	private String firebaseUuid;
 
 	private String examType;
 	private String examLocation;
