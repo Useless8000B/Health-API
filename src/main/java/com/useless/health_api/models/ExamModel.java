@@ -1,5 +1,7 @@
 package com.useless.health_api.models;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,6 @@ public class ExamModel {
 
 	private String examType;
 	private String examLocation;
-	private String examDate;
+	private LocalDateTime examDate;
 	
 }
